@@ -2,7 +2,7 @@
   "name": "sima/timecop",
   "license": "BSD",
   "description": "Работа с управлением временем на сайте",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "php": "~7.1",
     "yiisoft/yii2-httpclient": "~2.0.0"

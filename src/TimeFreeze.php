@@ -45,8 +45,7 @@ class TimeFreeze extends Component implements BootstrapInterface
     }
 
     /**
-     *
-     * @param Application $app
+     * @inheritdoc
      */
     public function bootstrap($app): void
     {
