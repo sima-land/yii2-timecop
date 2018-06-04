@@ -1,0 +1,29 @@
+{
+  "name": "sima/timecop",
+  "license": "BSD",
+  "description": "Работа с управлением временем на сайте",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "~7.1",
+    "yiisoft/yii2-httpclient": "~2.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7.2.*"
+  },
+  "authors": [
+    {
+      "name": "Nisskhen Xenia",
+      "email": "nisskhen_kd@ekb.sima-land.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "sima\\timecop\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "sima\\timecop\\tests\\": "tests"
+    }
+  }
+}
