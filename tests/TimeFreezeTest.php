@@ -2,7 +2,6 @@
 
 namespace sima\timecop\tests;
 
-use PHPUnit\Framework\MockObject\Stub;
 use PHPUnit\Framework\TestCase;
 use sima\timecop\TimeFreeze;
 use yii\web\Application;
