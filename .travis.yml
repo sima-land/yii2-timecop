@@ -5,6 +5,7 @@ php:
 sudo: false
 
 install:
+  - travis_retry composer config --global repositories.0 composer https://asset-packagist.org
   - travis_retry composer self-update
   - travis_retry composer install --prefer-dist --no-interaction
 
