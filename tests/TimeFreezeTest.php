@@ -11,6 +11,8 @@ class TimeFreezeTest extends TestCase
 {
     /**
      * Проверка управления временем на сайте.
+     * 
+     * @covers TimeFreeze::bootstrap
      */
     public function testBootstrap(): void
     {
