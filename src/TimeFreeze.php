@@ -22,7 +22,7 @@ class TimeFreeze extends Component implements BootstrapInterface
     /**
      * @var string Наименование гет-параметра для управления временем.
      */
-    public $requestVariable = 'SIMA_TIME_VECTOR';
+    public $requestVariable = 'TIME_VECTOR';
 
     /**
      * @var string|Session Сессия.
