@@ -4,16 +4,11 @@ namespace sima\timecop\tests;
 
 use PHPUnit\Framework\TestCase;
 use sima\timecop\TimeFreeze;
-use yii\di\Instance;
 use yii\web\Application;
-use yii\web\Request;
 use yii\web\Session;
 
 class TimeFreezeTest extends TestCase
 {
-
-    protected $cookie = null;
-
     /**
      * Проверка управления временем на сайте.
      */
