@@ -7,12 +7,16 @@ use sima\timecop\TimeFreeze;
 use yii\web\Application;
 use yii\web\Session;
 
+/**
+ * @coversDefaultClass \sima\timecop\TimeFreeze
+ */
 class TimeFreezeTest extends TestCase
 {
     /**
      * Проверка управления временем на сайте.
      * 
-     * @covers TimeFreeze::bootstrap
+     * @covers ::bootstrap
+     * @covers ::init
      */
     public function testBootstrap(): void
     {
