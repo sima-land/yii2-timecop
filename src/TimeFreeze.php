@@ -1,6 +1,6 @@
 <?php
 
-namespace sima\timecop;
+namespace simaland\timecop;
 
 use yii\base\{
     Application,

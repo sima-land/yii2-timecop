@@ -19,12 +19,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "sima\\timecop\\": "src"
+      "simaland\\timecop\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "sima\\timecop\\tests\\": "tests"
+      "simaland\\timecop\\tests\\": "tests"
     }
   }
 }

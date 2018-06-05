@@ -1,14 +1,14 @@
 <?php
 
-namespace sima\timecop\tests;
+namespace simaland\timecop\tests;
 
 use PHPUnit\Framework\TestCase;
-use sima\timecop\TimeFreeze;
+use simaland\timecop\TimeFreeze;
 use yii\web\Application;
 use yii\web\Session;
 
 /**
- * @coversDefaultClass \sima\timecop\TimeFreeze
+ * @coversDefaultClass \simaland\timecop\TimeFreeze
  */
 class TimeFreezeTest extends TestCase
 {
