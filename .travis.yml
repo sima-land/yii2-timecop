@@ -1,0 +1,14 @@
+language: php
+php:
+  - 7.1
+
+sudo: false
+
+install:
+  - travis_retry pecl install timecop-1.2.10
+  - travis_retry composer config --global repositories.0 composer https://asset-packagist.org
+  - travis_retry composer self-update
+  - travis_retry composer install --prefer-dist --no-interaction
+
+script:
+ - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover --verbose $PHPUNIT_FLAGS
