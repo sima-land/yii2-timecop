@@ -1,6 +1,6 @@
 {
   "name": "sima-land/timecop",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "description": "Работа с управлением временем на сайте",
   "minimum-stability": "stable",
   "type": "library",
