@@ -3,10 +3,10 @@
   "license": "BSD",
   "description": "Работа с управлением временем на сайте",
   "minimum-stability": "stable",
+  "type": "library",
   "require": {
     "php": "^7.1",
-    "yiisoft/yii2-httpclient": "^2.0.6",
-    "yiisoft/yii2": "^2.0.15"
+    "cebe/assetfree-yii2": "^2.0.11"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.2"
