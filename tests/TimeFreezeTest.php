@@ -17,6 +17,7 @@ class TimeFreezeTest extends TestCase
      * 
      * @covers ::bootstrap
      * @covers ::init
+     * @covers ::fillSettings
      */
     public function testBootstrap(): void
     {
@@ -27,6 +28,7 @@ class TimeFreezeTest extends TestCase
         $today = date('d.m.Y');
         $app = new Application($config);
         $timeFreeze = new TimeFreeze();
+        $timeFreeze->fillSettings();
         $timeFreeze->session = $this->createMock(Session::class);
         $timeFreeze->session->expects($this->any())
             ->method("setCookieParams")

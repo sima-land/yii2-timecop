@@ -40,8 +40,6 @@ class TimeFreeze extends Component implements BootstrapInterface
     public function init(): void
     {
         parent::init();
-        $this->session = Instance::ensure($this->session, Session::class);
-        $this->request = Instance::ensure($this->request, Request::class);
     }
 
     /**
@@ -49,7 +47,8 @@ class TimeFreeze extends Component implements BootstrapInterface
      */
     public function bootstrap($app): void
     {
-        if (\function_exists('timecop_freeze')) {
+        if (\extension_loaded('timecop')) {
+            $this->fillSettings();
             $timeVector = $this->request->getQueryParam($this->requestVariable);
             if (null !== $timeVector) {
                 if ($timeVector === 'reset') {
@@ -65,5 +64,16 @@ class TimeFreeze extends Component implements BootstrapInterface
                 timecop_freeze((int)$timeVector);
             }
         }
+    }
+
+    /**
+     * Заполнение дополнительных переменных.
+     *
+     * @throws InvalidConfigException
+     */
+    public function fillSettings(): void
+    {
+        $this->session = Instance::ensure($this->session, Session::class);
+        $this->request = Instance::ensure($this->request, Request::class);
     }
 }
